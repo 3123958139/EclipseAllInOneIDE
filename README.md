@@ -20,3 +20,56 @@ Python是学习的主要语言，当作语言胶水用，用Python做数据整�
 
 - Mathematica
 - Spark
+
+------
+
+# 1. Python操作Spark
+
+*Spark环境的搭建*
+
+- 准备
+
+  - JDK
+  - Python
+  - Hadoop
+  - Spark
+
+- 安装
+
+  参考*https://blog.csdn.net/hjxinkkl/article/details/57083549?winzoom=1*
+
+  或见[/pics/在windows安装部署spark(python版) - CSDN博客.png](/pics/在windows安装部署spark(python版) - CSDN博客.png)
+
+*一个例子*
+
+- 代码
+
+  ```python
+  # -*- coding: utf-8 -*-
+  from __future__ import print_function
+  
+  import os
+  
+  from pyspark import *
+  print(os.environ['SPARK_HOME'])
+  print(os.environ['HADOOP_HOME'])
+  if __name__ == '__main__':
+      sc = SparkContext("local[8]")
+      rdd = sc.parallelize("hello PySpark world".split(" "))
+      counts = rdd \
+          .flatMap(lambda line: line) \
+          .map(lambda word: (word, 1)) \
+          .reduceByKey(lambda a, b: a + b) \
+          .foreach(print)
+      sc.stop
+  
+  ```
+
+- 输出
+
+![](/pics/Spark的一个例子.jpg)
+
+
+
+
+
