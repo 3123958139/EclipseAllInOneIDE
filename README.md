@@ -16,7 +16,7 @@
 - Lisp：函数式，将一切电脑运算视为代入参数式的函数计算 
 - Python：对象式，一切皆对象，创建对象即可对数据选择操作
 
-Python是学习的主要语言，当作语言胶水用，用Python做数据整理，用SQL操作数据库，用Mathematica做数学计算和画图，用Spark进行规模运算
+C和Lisp作为编程规范的理论来学习，Python是工作的主要语言，进行项目快速开发和当作语言胶水用，用Python做数据整理和画图，用SQL操作数据库，用Mathematica做数学计算，用Spark进行规模运算
 
 - Mathematica
 - Spark
@@ -69,7 +69,18 @@ Python是学习的主要语言，当作语言胶水用，用Python做数据整�
 
 ![](/pics/Spark的一个例子.jpg)
 
+# Python基础库的使用
 
+*数据处理基础库*
 
+- numpy：对Python数据类型list的拓展，可以得到n*m的矩阵
+- pandas：基于numpy得到的数据表
+- matplotlib：可定制性的画图软件
 
+*领域应用库*
+
+- scikit-learn：机器学习
+- tensorflow：深度学习
+- statsmodel：统计
+- NTLK：自然语言
 

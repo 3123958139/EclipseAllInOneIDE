@@ -16,7 +16,7 @@
 - Lisp：函数式，将一切电脑运算视为代入参数式的函数计算 
 - Python：对象式，一切皆对象，创建对象即可对数据选择操作
 
-Python是学习的主要语言，当作语言胶水用，用Python做数据整理，用SQL操作数据库，用Mathematica做数学计算和画图，用Spark进行规模运算
+C和Lisp作为编程规范的理论来学习，Python是工作的主要语言，进行项目快速开发和当作语言胶水用，用Python做数据整理和画图，用SQL操作数据库，用Mathematica做数学计算，用Spark进行规模运算
 
 - Mathematica
 - Spark
