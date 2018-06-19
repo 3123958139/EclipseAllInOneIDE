@@ -137,8 +137,11 @@ print(df.dtypes)
 - 画图
 
 ~~~python
-if __name__ == "__main__": # 在主进程中画图
-    plt.plot(df['date'], df['open'])
+df.set_index('date', inplace=True)
+dfplt = df.ix[:, 0:4]
+
+if __name__ == "__main__":
+    dfplt.plot()
     plt.show()
 ~~~
 
